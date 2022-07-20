@@ -18,6 +18,29 @@ button {
     color: black;
 }
 
+
+#bloc-1-hero h1 {
+    font-size: 32px;
+}
+
+
+.h1 {
+    font-size: 20px;
+    font-family: "Open Sans";
+}
+
+
+h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 h4 {
     font-style: italic;
     font-weight: bolder;
@@ -31,6 +54,12 @@ h5 {
 
 h6 {
     font-size: 18px;
+}
+
+
+label {
+    font-family: "helvetica"!important;
+    font-weight: 400!important;
 }
 
 .bgc-white {
@@ -99,6 +128,30 @@ h6 {
     margin: 0% 10%;
     text-align: center;
 }
+
+@media (max-device-width: 767px){
+    #bloc-4-portfolio img{
+        width: 100%;
+    }
+    h2 {
+        font-size: 20px;
+        width: 100%;
+    }
+    #bloc-3-what-i-do {
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    .col-sm-12 {
+        width: 100%; 
+        margin: 0%;
+        padding: 0%;
+    }
+    .p {
+        font-size: 12px!important;
+    }
+}
+
 @media (min-device-width: 768px) and (max-device-width: 1024px){
 
     .div-w {
@@ -115,11 +168,17 @@ h6 {
     }
 }
 
-
-
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+.fa {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.fa:hover{
+    color: white!important;
 }
 
 .bloc {
@@ -197,11 +256,9 @@ a:hover {
 .voffset-lg {
     margin-top: 80px;
 }
-
-#bloc-1-hero h1 {
-    font-size: 32px;
+.nav a:hover {
+    color: rgb(243, 151, 108);
 }
-
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -528,18 +585,13 @@ a[data-lightbox]:hover img {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto;
     text-align: center;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
 }
 
 #tel-btn {
@@ -563,23 +615,13 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto;
 }
 
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-}
 
 .med-width-whitespace {
     max-width: 800px;
-    margin: auto auto auto auto;
+    margin: auto;
     box-shadow: 0px 0px 0px #000000;
 }
 
@@ -590,6 +632,7 @@ h3 {
 
 .portfolio-thumb {
     margin-bottom: 24px;
+    margin-right: 0px;
 }
 
 .portfolio-row {
@@ -709,11 +752,17 @@ h3 {
         margin-left: 0;
         margin-right: 0;
     }
+
+    .navbar-header {
+        padding-left: 50px;
+    }
+
     .site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
+        display: none;
     }
     .nav > li {
         margin-top: 0;
@@ -774,19 +823,7 @@ h3 {
     .bloc-lg {
         padding: 40px 0;
     }
-    .bloc-sm,
-    .bloc-md {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .bloc-tile-2 .container,
-    .bloc-tile-3 .container,
-    .bloc-tile-4 .container,
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding-left: 0;
-        padding-right: 0;
-    }
+
     .a-block {
         padding: 0 10px;
     }
@@ -831,4 +868,9 @@ h3 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+
+.dv {
+    margin: -20px 0px 0px 0px;
+    padding: 0%;
 }
