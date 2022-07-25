@@ -84,7 +84,7 @@ label {
 }
 
 .bgc-dark-blue-op {
-    background-color: rgb(54, 69, 119, .5);
+    background-color: rgb(54, 69, 119, .3);
 }
 
 .tc-brown {
@@ -167,7 +167,7 @@ label {
         padding: 0%;
     }
     .p {
-        font-size: 12px!important;
+        font-size: 14px!important;
     }
 }
 
@@ -594,6 +594,12 @@ p {
 
 .tight-width-whitespace {
     max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+.tight-width-whitespace2 {
+    max-width: 420px;
     margin: auto;
     text-align: center;
 }
