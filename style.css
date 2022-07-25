@@ -18,6 +18,10 @@ button {
     color: black;
 }
 
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
 
 #bloc-1-hero h1 {
     font-size: 32px;
@@ -41,18 +45,18 @@ h3 {
     font-weight: 700;
 }
 
-h4 {
-    font-style: italic;
+.p4 {
     font-weight: bolder;
     font-size: 20px;
 }
 
-h5 {
+.p5 {
+    font-style: italic;
     font-weight: bolder;
     font-size: 18px;
 }
 
-h6 {
+.p6 {
     font-size: 18px;
 }
 
@@ -62,70 +66,86 @@ label {
     font-weight: 400!important;
 }
 
-.bgc-white {
-    background: rgb(255, 255, 255);
-}
-
-.tc-white {
-    color: rgb(255, 255, 255);
-}
-
-.bgc-dark-slate-blue {
-    background-color: rgb(54, 69, 119);
-}
-
-.tc-dark-slate-blue {
-    color: rgb(54, 69, 119);
-}
-
-.icon-dark-slate-blue {
-    border-color: rgb(54, 69, 119);
-}
-
-.bgc-atomic-tangerine {
-    background-color: rgb(243, 151, 108)!important;
-}
-
-.btn-atomic-tangerine {
-    background: rgb(243, 151, 108);
-}
-
-.btn-atomic-tangerine:hover {
-    background: rgb(194, 121, 86)!important;
-}
-.tc-atomic-tangerine {
-    color: rgb(243, 151, 108);
-}
 
 .bgc-black {
-    background-color: rgb(0, 0, 0);
+    background-color: #000000;
 }
 
 .tc-black {
-    color: rgba(0, 0, 0, 0.5);
+    color: #000000;
 }
 
-.bgc-grey {
-    background-color: rgba(255, 255, 255, 0.7);
+.bgc-dark-blue {
+    background-color: #364577;
 }
 
-.tc-grey {
-    color: rgba(255, 255, 255, 0.5);
+.tc-dark-blue {
+    color: #364577;
+}
+
+.bgc-dark-blue-op {
+    background-color: rgb(54, 69, 119, .5);
 }
 
 .tc-brown {
-    color: rgba(165, 147, 99, 0.7);
+    color: #78280A;
 }
 
-.brown-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px 40px 40px 40px;
+
+.btn-bgc:hover {
+    background-color: #78280A!important;
+    color: #ffffff;
+}
+
+.bgc-orange {
+    background-color: #FFA550!important;
+}
+
+.tc-orange {
+    color: rgb(255, 165, 80);
+}
+
+.nav a:hover {
+    color: #FFA550;
+}
+
+.navbar-brand:hover {
+    border: 2px solid #000000;
+}
+
+.bgc-grey {
+    background-color: #E5E5E5;
+}
+
+.tc-grey {
+    color: #E5E5E5;
+}
+
+.bgc-white {
+    background-color: #ffffff;
+}
+
+.tc-white {
+    color: #ffffff;
+}
+
+.fa:hover{
+    color: #E5E5E5!important;
+}
+
+.webtex {
+    opacity: 1!important;
+    visibility: visible;
 }
 
 .div-w {
     width: 80%;
     margin: 0% 10%;
     text-align: center;
+}
+
+.drow {
+    padding: 40px 40px 40px 40px;
 }
 
 @media (max-width: 767px){
@@ -165,19 +185,6 @@ label {
         margin: 0% 20%;
         text-align: center;
     }
-}
-
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.fa {
-    color: rgba(255, 255, 255, 0.5);
-}
-
-.fa:hover{
-    color: white!important;
 }
 
 .bloc {
@@ -255,9 +262,7 @@ a:hover {
 .voffset-lg {
     margin-top: 80px;
 }
-.nav a:hover {
-    color: rgb(243, 151, 108);
-}
+
 .navbar {
     margin-bottom: 0;
     z-index: 1;
@@ -459,7 +464,7 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    opacity: 0;
+    visibility: hidden;
     z-index: 500;
     transition: all .3s ease-in-out;
 }
@@ -605,7 +610,6 @@ p {
 
 .cta-hero {
     margin-top: 22px;
-    color: rgb(255, 255, 255)!important;
     text-transform: uppercase;
     padding: 12px 28px 12px 28px;
     font-size: 16px;
